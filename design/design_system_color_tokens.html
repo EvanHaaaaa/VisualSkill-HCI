@@ -1,0 +1,173 @@
+
+<style>
+  .ds-section { margin-bottom: 28px; }
+  .ds-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; color: #8090B0; text-transform: uppercase; margin-bottom: 12px; }
+  .token-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 0.5px solid rgba(255,255,255,0.05); }
+  .token-row:last-child { border-bottom: none; }
+  .swatch-sm { width: 36px; height: 36px; border-radius: 6px; flex-shrink: 0; border: 0.5px solid rgba(255,255,255,0.08); }
+  .token-name { font-size: 12px; font-weight: 500; color: #F5F0E0; min-width: 160px; font-family: monospace; }
+  .token-hex { font-size: 11px; color: #8090B0; font-family: monospace; min-width: 80px; }
+  .token-use { font-size: 12px; color: #5A6A8A; flex: 1; }
+  .divider { border: none; border-top: 0.5px solid rgba(255,255,255,0.07); margin: 20px 0; }
+  .preview-bar { border-radius: 10px; overflow: hidden; margin-top: 6px; }
+  .chip { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+</style>
+
+<div style="background:#0A0E1A; border-radius: 12px; padding: 20px 22px;">
+
+  <div class="ds-section">
+    <div class="ds-label">Deep Space — backgrounds & struktur</div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#0A0E1A;"></div>
+      <span class="token-name">--ds-bg-base</span>
+      <span class="token-hex">#0A0E1A</span>
+      <span class="token-use">Background halaman utama (paling gelap)</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#0F1629;"></div>
+      <span class="token-name">--ds-bg-navbar</span>
+      <span class="token-hex">#0F1629</span>
+      <span class="token-use">Navbar, header, footer</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#141E35;"></div>
+      <span class="token-name">--ds-bg-section</span>
+      <span class="token-hex">#141E35</span>
+      <span class="token-use">Section alternating, sidebar</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#1C2A4A;"></div>
+      <span class="token-name">--ds-bg-elevated</span>
+      <span class="token-hex">#1C2A4A</span>
+      <span class="token-use">Card hover state, tooltip background</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#3A4055;"></div>
+      <span class="token-name">--ds-border</span>
+      <span class="token-hex">#3A4055</span>
+      <span class="token-use">Border default semua elemen</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="ds-section">
+    <div class="ds-label">Nebula Purple — cards, surfaces & interaktif</div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#1A0933;"></div>
+      <span class="token-name">--nb-card-bg</span>
+      <span class="token-hex">#1A0933</span>
+      <span class="token-use">Background card utama</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#2E1060;"></div>
+      <span class="token-name">--nb-card-hover</span>
+      <span class="token-hex">#2E1060</span>
+      <span class="token-use">Card on hover, modal overlay</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#4B1EA0;"></div>
+      <span class="token-name">--nb-accent</span>
+      <span class="token-hex">#4B1EA0</span>
+      <span class="token-use">Border card aktif, icon background</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#7B4FD4;"></div>
+      <span class="token-name">--nb-highlight</span>
+      <span class="token-hex">#7B4FD4</span>
+      <span class="token-use">Link warna, badge, tag, underline aktif</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#C49DE8;"></div>
+      <span class="token-name">--nb-text-muted</span>
+      <span class="token-hex">#C49DE8</span>
+      <span class="token-use">Teks sekunder di atas card nebula</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#F0E5FF;"></div>
+      <span class="token-name">--nb-text-primary</span>
+      <span class="token-hex">#F0E5FF</span>
+      <span class="token-use">Teks utama di atas card nebula</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="ds-section">
+    <div class="ds-label">Solar Flare — CTA, aksi & fokus</div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#FF6B1A;"></div>
+      <span class="token-name">--sf-btn-primary</span>
+      <span class="token-hex">#FF6B1A</span>
+      <span class="token-use">Tombol CTA utama, tombol submit</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#FF9B4D;"></div>
+      <span class="token-name">--sf-btn-hover</span>
+      <span class="token-hex">#FF9B4D</span>
+      <span class="token-use">Hover state tombol, icon aktif</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#FF6B1A22;"></div>
+      <span class="token-name">--sf-bg-subtle</span>
+      <span class="token-hex">#FF6B1A22</span>
+      <span class="token-use">Background notifikasi, alert, highlight teks</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#3A1A00;"></div>
+      <span class="token-name">--sf-text-on-btn</span>
+      <span class="token-hex">#FFFFFF</span>
+      <span class="token-use">Teks di atas tombol Solar Flare</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="ds-section">
+    <div class="ds-label">Teks global</div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#F5F0E0;"></div>
+      <span class="token-name">--text-primary</span>
+      <span class="token-hex">#F5F0E0</span>
+      <span class="token-use">Semua teks utama & heading</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#8090B0;"></div>
+      <span class="token-name">--text-secondary</span>
+      <span class="token-hex">#8090B0</span>
+      <span class="token-use">Teks deskripsi, placeholder, metadata</span>
+    </div>
+    <div class="token-row">
+      <div class="swatch-sm" style="background:#3A4055;"></div>
+      <span class="token-name">--text-disabled</span>
+      <span class="token-hex">#3A4055</span>
+      <span class="token-use">Teks disabled / tidak aktif</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="ds-section">
+    <div class="ds-label">Preview — komponen nyata</div>
+    <div class="preview-bar" style="background:#0F1629; padding: 10px 16px; display:flex; align-items:center; gap:20px; border-bottom: 0.5px solid #3A4055;">
+      <span style="color:#F5F0E0; font-size:14px; font-weight:500; margin-right:auto;">&#9733; CosmosWeb</span>
+      <span style="color:rgba(245,240,224,0.5); font-size:12px;">Galaksi</span>
+      <span style="color:rgba(245,240,224,0.5); font-size:12px;">Planet</span>
+      <span style="color:rgba(245,240,224,0.5); font-size:12px;">Tentang</span>
+      <span style="background:#FF6B1A; color:#fff; font-size:11px; font-weight:500; padding:5px 14px; border-radius:20px;">Jelajahi</span>
+    </div>
+    <div style="background:#0A0E1A; padding: 14px 16px; display:flex; gap:10px;">
+      <div style="flex:1; background:#1A0933; border-radius:8px; padding:12px; border: 0.5px solid #4B1EA0;">
+        <div style="font-size:11px; color:#C49DE8; margin-bottom:4px;">Nebula Andromeda</div>
+        <div style="font-size:13px; font-weight:500; color:#F0E5FF;">2.537 juta tahun cahaya</div>
+        <span class="chip" style="background:#2E1060; color:#7B4FD4; margin-top:8px; display:inline-block;">Galaksi spiral</span>
+      </div>
+      <div style="flex:1; background:#1A0933; border-radius:8px; padding:12px; border: 0.5px solid #3A4055;">
+        <div style="font-size:11px; color:#8090B0; margin-bottom:4px;">Saturnus</div>
+        <div style="font-size:13px; font-weight:500; color:#F5F0E0;">Planet cincin</div>
+        <span class="chip" style="background:#FF6B1A22; color:#FF9B4D; margin-top:8px; display:inline-block;">Tata surya</span>
+      </div>
+    </div>
+  </div>
+
+</div>

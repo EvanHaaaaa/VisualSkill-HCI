@@ -1,0 +1,20 @@
+# Windows & macOS system files
+desktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archives & submission packages
+*.zip
+*.rar
+*.7z
+
+# Logs & temporary files
+*.log
+*.tmp
